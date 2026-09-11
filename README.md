@@ -148,6 +148,22 @@ redacted to `scheme://host` before they appear in any report or MCP response.
 
 ---
 
+## Demo video
+
+A 4:21 screen recording of the real workflow (setup through successful output),
+1080p30, captions burned into every frame:
+
+- `docs/demo/escrow-sentinel-demo.mp4` — captions only (no audio track)
+- `docs/demo/escrow-sentinel-demo-narrated.mp4` — same video stream with an
+  offline English voice-over
+- `docs/demo-narration.txt` — per-segment narration with timestamps
+- `docs/demo/BUILD-NOTES.md` + `data/gibwork-demo-video-20260911.json` — exact
+  commands, ffmpeg version and sha256 of every capture, so the recording can be
+  audited or re-rendered
+
+Every terminal line in the video comes from a command run in this repository; the
+raw stdout is committed under `docs/demo-captures/`.
+
 ## Example IO
 
 All of the output below is copied verbatim from real runs on 2026-09-11 (UTC) and
