@@ -1,5 +1,7 @@
 # Escrow Sentinel
 
+**Repo:** <https://github.com/summerlx0416-droid/escrow-sentinel> - MIT licensed, TypeScript, Node >= 22, no wallet or API key required.
+
 **A read-only Gibwork bounty radar for developers and AI agents: discover open
 bounties, verify their Solana escrow on-chain, rank them by value / competition /
 deadline, diff captures over time and export Markdown + CSV + JSON reports —
