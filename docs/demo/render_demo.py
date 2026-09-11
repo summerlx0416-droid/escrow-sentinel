@@ -450,8 +450,9 @@ def build_segments() -> list[dict]:
                      "construction.",
              lines=seg_cmd("01-help.txt", "node dist/cli.js --help")),
         dict(slug="tools", label="MCP server card", dur=12.0,
-             caption="tools prints the server card: four read-only tools over stdio, and the "
-                     "effective config with the RPC endpoint redacted to scheme://host.",
+             caption="tools prints the server card: four read-only tools over stdio, plus the "
+                     "effective config — the RPC endpoint appears as scheme://host only, never with "
+                     "a path or key.",
              lines=seg_cmd("02-tools.txt", "node dist/cli.js tools")),
         dict(slug="discover", label="discover — public listing", dur=16.0,
              caption="discover reads the same public listing endpoint the Gibwork site calls, "

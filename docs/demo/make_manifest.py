@@ -95,6 +95,30 @@ def probe(path: pathlib.Path) -> dict:
     return info
 
 
+def bonus_tts() -> dict:
+    """Optional offline-TTS voice-over generated with the Windows SAPI voice on this machine."""
+    files = {
+        "wav": ROOT / "docs" / "demo" / "narration-tts.wav",
+        "mp3": ROOT / "docs" / "demo" / "narration-tts.mp3",
+        "narratedMp4": ROOT / "docs" / "demo" / "escrow-sentinel-demo-narrated.mp4",
+    }
+    out: dict = {
+        "available": all(p.exists() for p in files.values()),
+        "generator": "docs/demo/make_tts.py",
+        "engine": "Windows SAPI (System.Speech) — offline, no network, no third-party service",
+        "voice": "Microsoft Zira Desktop (en-US)",
+        "alignment": "one clip per segment, placed at its real on-screen start and padded to the "
+                     "exact slot length, so the 261 s voice track matches the video timeline",
+        "note": "the required deliverable docs/demo/escrow-sentinel-demo.mp4 stays captions-only; "
+                "the narrated cut carries the identical video stream plus the TTS audio",
+    }
+    for key, p in files.items():
+        if p.exists():
+            out[key] = {"path": p.relative_to(ROOT).as_posix(),
+                        "bytes": p.stat().st_size, "sha256": sha256(p)}
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--verify", action="store_true",
@@ -163,6 +187,7 @@ def main() -> int:
             "sha256": sha256(ROOT / "docs" / "demo-narration.txt"),
             "language": "en",
         },
+        "bonusVoiceOver": bonus_tts(),
         "buildNotes": {
             "path": "docs/demo/BUILD-NOTES.md",
             "renderer": "docs/demo/render_demo.py",
@@ -227,12 +252,15 @@ def main() -> int:
             "reproduce": "docs/demo/BUILD-NOTES.md",
         },
         "humanStillTodo": [
-            "optional: record the voice-over from docs/demo-narration.txt (no audio track exists)",
-            "upload docs/demo/escrow-sentinel-demo.mp4 to YouTube (unlisted) or X and put the URL in "
-            "the bounty submission",
+            "upload docs/demo/escrow-sentinel-demo.mp4 (captions only) or "
+            "docs/demo/escrow-sentinel-demo-narrated.mp4 (same cut + offline TTS voice-over) to "
+            "YouTube (unlisted) or X and put the URL in the bounty submission",
+            "optional: replace the robot voice with a human take read from docs/demo-narration.txt "
+            "(one line per segment, with timestamps) and re-mux (-c:v copy)",
             "optional: capture the still screenshots the demo script still lists (05-report, "
             "06-review, 07-mcp) from this session's output",
-            "check the Gibwork submission form's wording/fields before posting",
+            "check the Gibwork submission form's wording/fields (and the Discord attendance rule) "
+            "before posting",
         ],
     }
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)

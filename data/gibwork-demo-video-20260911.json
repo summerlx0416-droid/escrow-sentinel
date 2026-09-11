@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "gibwork-demo-video-20260911",
+  "generatedAtUtc": "2026-09-11T18:46:19Z",
+  "workstream": "hackathon-gibwork",
+  "repo": {
+    "url": "https://github.com/summerlx0416-droid/escrow-sentinel",
+    "commit": "96bf951",
+    "license": "MIT",
+    "localPath": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork"
+  },
+  "bounty": {
+    "name": "Gibwork Developer Hackathon Bounty",
+    "reward": "1000 USDC (escrow verified on Solana mainnet by this tool)",
+    "videoRequirement": "screen recording / demo video URL, 2-5 minutes, English"
+  },
+  "video": {
+    "path": "docs/demo/escrow-sentinel-demo.mp4",
+    "pathAbsolute": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork\\docs\\demo\\escrow-sentinel-demo.mp4",
+    "sha256": "3956871e9b842d8498ca043c63392693505dc4fd9ed2f9d01bad8a736109341a",
+    "sizeBytes": 75109527,
+    "durationSeconds": 261.0,
+    "durationHms": "00:04:21.00",
+    "resolution": "1920x1080",
+    "aspectRatio": "16:9",
+    "fps": 30,
+    "container": "mp4",
+    "videoCodec": "h264",
+    "profile": "High",
+    "pixelFormat": "yuv420p",
+    "bitrateKbps": 2302,
+    "audioTracks": 0,
+    "audioNote": "no audio track was recorded; captions are burned into every frame and docs/demo-narration.txt carries the voice-over text with timestamps",
+    "captionsBurnedIn": true,
+    "segments": 19,
+    "crossfadeSeconds": 0.5,
+    "motion": "slow zoompan per segment (max +4.5%)"
+  },
+  "narration": {
+    "path": "docs/demo-narration.txt",
+    "sha256": "7a5e27bc23b03298780a828776f618702b7647aaf10bda001ee3a91df3e277fc",
+    "language": "en"
+  },
+  "bonusVoiceOver": {
+    "available": true,
+    "generator": "docs/demo/make_tts.py",
+    "engine": "Windows SAPI (System.Speech) — offline, no network, no third-party service",
+    "voice": "Microsoft Zira Desktop (en-US)",
+    "alignment": "one clip per segment, placed at its real on-screen start and padded to the exact slot length, so the 261 s voice track matches the video timeline",
+    "note": "the required deliverable docs/demo/escrow-sentinel-demo.mp4 stays captions-only; the narrated cut carries the identical video stream plus the TTS audio",
+    "wav": {
+      "path": "docs/demo/narration-tts.wav",
+      "bytes": 11510144,
+      "sha256": "36a955f497212a88b80e72f030ea4350a60d0475e10a1aa41ed9f16bff342aa8"
+    },
+    "mp3": {
+      "path": "docs/demo/narration-tts.mp3",
+      "bytes": 3133170,
+      "sha256": "ecd0ca016d741720cb81a1b8f0d91cea08ec8bfb45f6d241e691e28f6b9f1eef"
+    },
+    "narratedMp4": {
+      "path": "docs/demo/escrow-sentinel-demo-narrated.mp4",
+      "bytes": 78412539,
+      "sha256": "78b3fee50c6807e8e632016b03b2275e2e7c599746ea1724bc26473abf9761ea"
+    }
+  },
+  "buildNotes": {
+    "path": "docs/demo/BUILD-NOTES.md",
+    "renderer": "docs/demo/render_demo.py",
+    "manifestWriter": "docs/demo/make_manifest.py",
+    "ffmpeg": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "ffmpegVersion": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers"
+  },
+  "verification": {
+    "ffprobeEquivalent": "py -3 -c \"import imageio_ffmpeg,subprocess;print(subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-i','docs/demo/escrow-sentinel-demo.mp4'],capture_output=True,text=True).stderr)\"",
+    "observed": {
+      "durationSeconds": 261.0,
+      "durationHms": "00:04:21.00",
+      "resolution": "1920x1080",
+      "codec": "h264 (High)",
+      "pixelFormat": "yuv420p",
+      "fps": 30,
+      "bitrateKbps": 2302,
+      "audioStreams": 0,
+      "inBountyRange": true
+    },
+    "fullDecodeCheck": {
+      "command": "\"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe\" -v error -i \"escrow-sentinel-demo.mp4\" -f null -",
+      "exitCode": 0,
+      "stderr": "",
+      "clean": true
+    },
+    "streamLine": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2299 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+  },
+  "timeline": [
+    {
+      "segment": "01",
+      "label": "demo — title",
+      "startSeconds": 0.0,
+      "endSeconds": 14.0,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/01-title.png",
+      "caption": "Escrow Sentinel: a read-only Gibwork bounty radar. A CLI plus an MCP server, TypeScript, MIT, no wallet and no API key. Entered in the Gibwork Developer Hackathon Bounty — 1000 USDC escrow."
+    },
+    {
+      "segment": "02",
+      "label": "the gap in the listing",
+      "startSeconds": 13.5,
+      "endSeconds": 29.5,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/02-problem.png",
+      "caption": "A bounty listing shows the headline, not the money. This row advertises $300 USDC, but the listing asset is CREDITS and the on-chain escrow holds 120 — 40% of the advertised pool."
+    },
+    {
+      "segment": "03",
+      "label": "setup + command surface",
+      "startSeconds": 29.0,
+      "endSeconds": 43.0,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/03-help.png",
+      "caption": "Start from the command surface: discover, verify, rank, diff, report, mcp, tools. No wallet, key or account is needed or read — the tool is read-only by construction."
+    },
+    {
+      "segment": "04",
+      "label": "MCP server card",
+      "startSeconds": 42.5,
+      "endSeconds": 54.5,
+      "durationSeconds": 12.0,
+      "frame": "docs/demo/frames/04-tools.png",
+      "caption": "tools prints the server card: four read-only tools over stdio, plus the effective config — the RPC endpoint appears as scheme://host only, never with a path or key."
+    },
+    {
+      "segment": "05",
+      "label": "discover — public listing",
+      "startSeconds": 54.0,
+      "endSeconds": 70.0,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/05-discover.png",
+      "caption": "discover reads the same public listing endpoint the Gibwork site calls, enriches each bounty from its detail page, and writes a UTC-stamped snapshot."
+    },
+    {
+      "segment": "06",
+      "label": "verify — Solana mainnet",
+      "startSeconds": 69.5,
+      "endSeconds": 87.5,
+      "durationSeconds": 18.0,
+      "frame": "docs/demo/frames/06-verify.png",
+      "caption": "verify asks the platform for each escrow token account and reads it directly from Solana: 9 verified, 0 mismatch, 0 unknown. The CREDITS row is flagged instead of being rounded up."
+    },
+    {
+      "segment": "07",
+      "label": "verify --offline",
+      "startSeconds": 87.0,
+      "endSeconds": 101.0,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/07-verify-offline.png",
+      "caption": "verify --offline opens no socket at all: rpc disabled, every row replayed from the verification stored in the snapshot, keeping its original evidence label and timestamp."
+    },
+    {
+      "segment": "08",
+      "label": "rank — value / competition / deadline",
+      "startSeconds": 100.5,
+      "endSeconds": 116.5,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/08-rank.png",
+      "caption": "rank scores chain-first value, competition, deadline urgency, escrow trust and coverage — the formula is printed on screen. The hackathon bounty scores 87.9: 1000 USDC verified, zero submissions, 48.4 days left."
+    },
+    {
+      "segment": "09",
+      "label": "diff — baseline vs today",
+      "startSeconds": 116.0,
+      "endSeconds": 132.0,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/09-diff.png",
+      "caption": "diff compares the committed baseline with today's capture: one bounty closed and dropped off the board, five submission counts moved — the CREDITS row went from unknown to 188 entries."
+    },
+    {
+      "segment": "10",
+      "label": "report — full pipeline",
+      "startSeconds": 131.5,
+      "endSeconds": 147.5,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/10-report.png",
+      "caption": "report runs the whole pipeline once: 9 verified, 0 mismatch, 0 unknown, and the top five ranked rows in one pass."
+    },
+    {
+      "segment": "11",
+      "label": "exported artifacts",
+      "startSeconds": 147.0,
+      "endSeconds": 157.0,
+      "durationSeconds": 10.0,
+      "frame": "docs/demo/frames/11-report-files.png",
+      "caption": "Each report run writes five artifacts: report.md for humans, report.csv for spreadsheets, report.json for other tools, the full snapshot.json, and diff.md."
+    },
+    {
+      "segment": "12",
+      "label": "report.md",
+      "startSeconds": 156.5,
+      "endSeconds": 170.5,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/12-report-md.png",
+      "caption": "The Markdown report keeps the provenance: every escrow row shows the token account, the platform ledger, the on-chain amount, the status and the evidence timestamp."
+    },
+    {
+      "segment": "13",
+      "label": "MCP over stdio",
+      "startSeconds": 170.0,
+      "endSeconds": 184.0,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/13-mcp-handshake.png",
+      "caption": "The same engine is an MCP server on stdio. A client sends initialize and tools/list; the server answers with four read-only tools — no write path anywhere in the protocol."
+    },
+    {
+      "segment": "14",
+      "label": "gib_list_bounties (1/2)",
+      "startSeconds": 183.5,
+      "endSeconds": 197.5,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/14-mcp-list-bounties-a.png",
+      "caption": "An agent asks the real question — verified escrow only, value at least 50 USD, top 3 — and gets chain-verified rows back, starting with the hackathon bounty: 1000 USDC and valueBasis \"onchain\"."
+    },
+    {
+      "segment": "15",
+      "label": "gib_list_bounties (2/2)",
+      "startSeconds": 197.0,
+      "endSeconds": 209.0,
+      "durationSeconds": 12.0,
+      "frame": "docs/demo/frames/15-mcp-list-bounties-b.png",
+      "caption": "Same response, continued: the escrow token account, the platform ledger, the on-chain amount at Solana slot 446226443, coverage 1, and the flags that explain the row."
+    },
+    {
+      "segment": "16",
+      "label": "gib_verify_escrow",
+      "startSeconds": 208.5,
+      "endSeconds": 222.5,
+      "durationSeconds": 14.0,
+      "frame": "docs/demo/frames/16-mcp-verify-escrow.png",
+      "caption": "gib_verify_escrow also takes a raw Solana token account, which makes it a general \"is this escrow funded?\" tool inside an agent session. The response is the complete real payload."
+    },
+    {
+      "segment": "17",
+      "label": "npm test (1/2)",
+      "startSeconds": 222.0,
+      "endSeconds": 234.0,
+      "durationSeconds": 12.0,
+      "frame": "docs/demo/frames/17-tests-a.png",
+      "caption": "Nothing in this video is hand-written sample output. cmd /c npm test rebuilds the TypeScript and runs the whole suite — no network required."
+    },
+    {
+      "segment": "18",
+      "label": "npm test (2/2)",
+      "startSeconds": 233.5,
+      "endSeconds": 245.5,
+      "durationSeconds": 12.0,
+      "frame": "docs/demo/frames/18-tests-b.png",
+      "caption": "46 tests, 0 failures — including the cases that prove a failed RPC, a missing token account or a rate-limited endpoint degrade to unknown instead of inventing a balance."
+    },
+    {
+      "segment": "19",
+      "label": "close",
+      "startSeconds": 245.0,
+      "endSeconds": 261.0,
+      "durationSeconds": 16.0,
+      "frame": "docs/demo/frames/19-close.png",
+      "caption": "Read-only by construction: no wallet, no key, no signature. Money is either proven on-chain or reported as unknown — never a guess. Repo and license on screen; built with AI coding assistants as a pair-programming tool."
+    }
+  ],
+  "frames": [
+    {
+      "path": "docs/demo/frames/01-title.png",
+      "sha256": "818c028c13b4aba63e0adb6ea5b006de628e8035964e693ec1dcfeb3f142c53c",
+      "bytes": 109063,
+      "onScreenSeconds": [
+        0.0,
+        14.0
+      ],
+      "label": "demo — title"
+    },
+    {
+      "path": "docs/demo/frames/02-problem.png",
+      "sha256": "abfa4fa2be280e428946918fa5425af8d76f5468804b33d33717ae176f465343",
+      "bytes": 101251,
+      "onScreenSeconds": [
+        13.5,
+        29.5
+      ],
+      "label": "the gap in the listing"
+    },
+    {
+      "path": "docs/demo/frames/03-help.png",
+      "sha256": "a2872cf94a875eca002ba518ed5f244520f583c35e9d98d80023d23286e8ec92",
+      "bytes": 136844,
+      "onScreenSeconds": [
+        29.0,
+        43.0
+      ],
+      "label": "setup + command surface"
+    },
+    {
+      "path": "docs/demo/frames/04-tools.png",
+      "sha256": "a8bb23a18a04e881e8f5b2eeb2427aa8954c685677fa51c6be6d7a3af86caed9",
+      "bytes": 98051,
+      "onScreenSeconds": [
+        42.5,
+        54.5
+      ],
+      "label": "MCP server card"
+    },
+    {
+      "path": "docs/demo/frames/05-discover.png",
+      "sha256": "4858e5b25ef71bfc4d32369ff86ce3ddc322b85c43ae980c4086fc5798106922",
+      "bytes": 182122,
+      "onScreenSeconds": [
+        54.0,
+        70.0
+      ],
+      "label": "discover — public listing"
+    },
+    {
+      "path": "docs/demo/frames/06-verify.png",
+      "sha256": "91db4e1949a6986040f21304702d498bbc4b2abd6bc48cb4c195893482dbfe3f",
+      "bytes": 149397,
+      "onScreenSeconds": [
+        69.5,
+        87.5
+      ],
+      "label": "verify — Solana mainnet"
+    },
+    {
+      "path": "docs/demo/frames/07-verify-offline.png",
+      "sha256": "82c74bb5be8f6d8461c59d1462d38ad339f62f9bf918f7a8115b93cb86819c63",
+      "bytes": 142474,
+      "onScreenSeconds": [
+        87.0,
+        101.0
+      ],
+      "label": "verify --offline"
+    },
+    {
+      "path": "docs/demo/frames/08-rank.png",
+      "sha256": "7dc95606b4d9b645c5467096f01ad8dff9308985546a5f756cec9ae04345f947",
+      "bytes": 109239,
+      "onScreenSeconds": [
+        100.5,
+        116.5
+      ],
+      "label": "rank — value / competition / deadline"
+    },
+    {
+      "path": "docs/demo/frames/09-diff.png",
+      "sha256": "76201c775547c24ae48ab58e7fd4065974e9586ac1561b5265434aeacf72d9e9",
+      "bytes": 130000,
+      "onScreenSeconds": [
+        116.0,
+        132.0
+      ],
+      "label": "diff — baseline vs today"
+    },
+    {
+      "path": "docs/demo/frames/10-report.png",
+      "sha256": "8938b6fbb25515aaf61129a2c239ffb44fa08d2e3c7d03568c54894a306c2d51",
+      "bytes": 157822,
+      "onScreenSeconds": [
+        131.5,
+        147.5
+      ],
+      "label": "report — full pipeline"
+    },
+    {
+      "path": "docs/demo/frames/11-report-files.png",
+      "sha256": "a0098addef08ab5b3c7dc23f53b2d823efb1646c5b3507e8dc4b32edc99e83a7",
+      "bytes": 66305,
+      "onScreenSeconds": [
+        147.0,
+        157.0
+      ],
+      "label": "exported artifacts"
+    },
+    {
+      "path": "docs/demo/frames/12-report-md.png",
+      "sha256": "a9bba100640f1b1341a508838bbd4ff125bcc2e46cd4dc423bdb2625411efb5b",
+      "bytes": 104718,
+      "onScreenSeconds": [
+        156.5,
+        170.5
+      ],
+      "label": "report.md"
+    },
+    {
+      "path": "docs/demo/frames/13-mcp-handshake.png",
+      "sha256": "9fdc22e8bbd90f6d3be3248a327ae2e5dfc94edb65302e3190cd1689d82cdbbe",
+      "bytes": 79260,
+      "onScreenSeconds": [
+        170.0,
+        184.0
+      ],
+      "label": "MCP over stdio"
+    },
+    {
+      "path": "docs/demo/frames/14-mcp-list-bounties-a.png",
+      "sha256": "fce328d6aec20c134c8c2d164d0b59196f9c7dbde84c7a583cb3569ea1887fbd",
+      "bytes": 114279,
+      "onScreenSeconds": [
+        183.5,
+        197.5
+      ],
+      "label": "gib_list_bounties (1/2)"
+    },
+    {
+      "path": "docs/demo/frames/15-mcp-list-bounties-b.png",
+      "sha256": "3cf83bb1fcd642680dc482875f62ce6e8511822ff82f88533ae9ff78b1a30567",
+      "bytes": 105579,
+      "onScreenSeconds": [
+        197.0,
+        209.0
+      ],
+      "label": "gib_list_bounties (2/2)"
+    },
+    {
+      "path": "docs/demo/frames/16-mcp-verify-escrow.png",
+      "sha256": "918e1cc1167fc4aa33190b84258400802b182e412d1cf11585f7feee092cd4fe",
+      "bytes": 131454,
+      "onScreenSeconds": [
+        208.5,
+        222.5
+      ],
+      "label": "gib_verify_escrow"
+    },
+    {
+      "path": "docs/demo/frames/17-tests-a.png",
+      "sha256": "df8da07a97a7d8e5b46138dc7f7e1426a594aa877c8fc661b6486aaebe834a4f",
+      "bytes": 154623,
+      "onScreenSeconds": [
+        222.0,
+        234.0
+      ],
+      "label": "npm test (1/2)"
+    },
+    {
+      "path": "docs/demo/frames/18-tests-b.png",
+      "sha256": "e84138554d14b4550fd3ace89c10684d32b4b1ec91e8bb59361b62c1f6258fda",
+      "bytes": 163038,
+      "onScreenSeconds": [
+        233.5,
+        245.5
+      ],
+      "label": "npm test (2/2)"
+    },
+    {
+      "path": "docs/demo/frames/19-close.png",
+      "sha256": "390f4f4d31125e54ea1c43629f9bb2b0db101542d161792ac508fbdb8ba72caf",
+      "bytes": 109785,
+      "onScreenSeconds": [
+        245.0,
+        261.0
+      ],
+      "label": "close"
+    }
+  ],
+  "sourceCommands": [
+    {
+      "command": "node dist/cli.js --help",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/01-help.txt",
+      "capturedAtUtc": "2026-09-11T18:35:06Z",
+      "stdoutBytes": 1983,
+      "stdoutSha256": "2e9e035b585679eb3bd048340087e087985c7bd4d190dcd619c0ec15f7bc8d67"
+    },
+    {
+      "command": "node dist/cli.js tools",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/02-tools.txt",
+      "capturedAtUtc": "2026-09-11T18:35:06Z",
+      "stdoutBytes": 509,
+      "stdoutSha256": "f4e35b8884051c087de26d960dc0fddddd0941b8b34cf5ac0ab92640d4e7719a"
+    },
+    {
+      "command": "node dist/cli.js discover",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/03-discover.txt",
+      "capturedAtUtc": "2026-09-11T18:35:15Z",
+      "stdoutBytes": 1484,
+      "stdoutSha256": "3113cb8c9a79c5f606b8bd643fe6c81b7de84bbc088fbdfd31920b50b64b9532"
+    },
+    {
+      "command": "node dist/cli.js verify",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/04b-verify-live.txt",
+      "capturedAtUtc": "2026-09-11T18:35:21Z",
+      "stdoutBytes": 1630,
+      "stdoutSha256": "2c0c3b9015c9c42fc0e42bcc62af096e27d6fba85ada63e06f0077fd64e1cabb"
+    },
+    {
+      "command": "node dist/cli.js verify --offline",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/04-verify-offline.txt",
+      "capturedAtUtc": "2026-09-11T18:35:21Z",
+      "stdoutBytes": 1603,
+      "stdoutSha256": "2cd1200eab220b435d6dce92147f06b8f01e28ace95b3374955beda0e6b7496f"
+    },
+    {
+      "command": "node dist/cli.js rank --top 5",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/05-rank.txt",
+      "capturedAtUtc": "2026-09-11T18:35:21Z",
+      "stdoutBytes": 1278,
+      "stdoutSha256": "b69b4723bf4ee72177d88cb1af6fc853a7afcf90e3ff1ad87d36c73d9afca48c"
+    },
+    {
+      "command": "node dist/cli.js diff fixtures/bounties-20260911T173421Z.json snapshots/bounties-20260911T183507Z.json",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/06-diff.txt",
+      "capturedAtUtc": "2026-09-11T18:35:21Z",
+      "stdoutBytes": 1147,
+      "stdoutSha256": "b66b5a65e4f1f391c505e825c8c51d973cc11f19a4fc833e076b626d49f99f0b"
+    },
+    {
+      "command": "node dist/cli.js diff",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/06b-diff-default.txt",
+      "capturedAtUtc": "2026-09-11T18:35:21Z",
+      "stdoutBytes": 268,
+      "stdoutSha256": "eae5d59cdc60614f6df4765840ecb2c43e870c5675fca3f8efa0148bf1cc63fb"
+    },
+    {
+      "command": "node dist/cli.js report --top 5",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/07-report.txt",
+      "capturedAtUtc": "2026-09-11T18:35:52Z",
+      "stdoutBytes": 1313,
+      "stdoutSha256": "84dd39ce060ba738d7fd798b2f9342adfdc2ad6f39f3c47600f6a74945125879"
+    },
+    {
+      "command": "dir /b reports\\20260911T183525Z",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/09-report-ls.txt",
+      "capturedAtUtc": "2026-09-11T18:35:52Z",
+      "stdoutBytes": 60,
+      "stdoutSha256": "3c1f363ba62164af4b64142d979eee146a3b5069ddf9ebd60d380f0601577932"
+    },
+    {
+      "command": "type reports\\20260911T183525Z\\report.md",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/10-report-md.txt",
+      "capturedAtUtc": "2026-09-11T18:35:52Z",
+      "stdoutBytes": 4433,
+      "stdoutSha256": "6c6efb7875a4889c9a2e86f14a77109195f27155d25eee3af40a11edd6da8e53"
+    },
+    {
+      "command": "node dist/cli.js mcp  < docs/demo-captures/08-mcp-requests.jsonl   (stdout)",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/08-mcp-stdout.jsonl",
+      "capturedAtUtc": "2026-09-11T18:36:12Z",
+      "stdoutBytes": 7631,
+      "stdoutSha256": "1950b61d5e09be8037c86eacb696aa5de7e03baeb3a5f9d6d3a077db23e3aeaa"
+    },
+    {
+      "command": "node dist/cli.js mcp  < docs/demo-captures/08-mcp-requests.jsonl   (stderr)",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/08-mcp-stderr.txt",
+      "capturedAtUtc": "2026-09-11T18:35:57Z",
+      "stdoutBytes": 61,
+      "stdoutSha256": "ce9d132b5f5c864805a298258c42d6e4e98782be71e82e35491abe8046fed312"
+    },
+    {
+      "command": "cmd /c npm test",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\xuabsgabf\\bounty-workbench\\workstreams\\hackathon-gibwork",
+      "shell": "cmd.exe redirect through pwsh 7 (npm.ps1 is blocked by execution policy)",
+      "captureFile": "docs/demo-captures/09-tests.txt",
+      "capturedAtUtc": "2026-09-11T18:36:17Z",
+      "stdoutBytes": 4247,
+      "stdoutSha256": "0e0bc0c47df06a7f8b0f120e9f224b10389a273a72b1f6ae22ab652d2e51221c"
+    }
+  ],
+  "honesty": {
+    "policy": "every terminal line rendered into a frame was copied verbatim from the stdout/stderr of a command executed in this session on this machine; no sample, mock or hand-written terminal output appears in the video",
+    "transforms": [
+      "trailing whitespace stripped; UTF-8 BOM / zero-width chars dropped for rendering",
+      "U+2139 and U+2713 (absent from Consolas) drawn with Segoe UI Symbol in the same monospace cell; the capture files keep the original characters",
+      "MCP frames show the real NDJSON responses pretty-printed with json.dumps(indent=2) and long JSON payloads sliced with an explicit, counted elision note printed on the frame itself",
+      "captions and the frames' annotation lines (marked with '#' or an arrow) are the video's narration, not terminal output"
+    ],
+    "reproduce": "docs/demo/BUILD-NOTES.md"
+  },
+  "humanStillTodo": [
+    "upload docs/demo/escrow-sentinel-demo.mp4 (captions only) or docs/demo/escrow-sentinel-demo-narrated.mp4 (same cut + offline TTS voice-over) to YouTube (unlisted) or X and put the URL in the bounty submission",
+    "optional: replace the robot voice with a human take read from docs/demo-narration.txt (one line per segment, with timestamps) and re-mux (-c:v copy)",
+    "optional: capture the still screenshots the demo script still lists (05-report, 06-review, 07-mcp) from this session's output",
+    "check the Gibwork submission form's wording/fields (and the Discord attendance rule) before posting"
+  ]
+}
