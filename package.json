@@ -1,0 +1,42 @@
+{
+  "name": "escrow-sentinel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only Gibwork bounty radar: discover bounties, verify Solana escrow on-chain, rank by value/competition/deadline, diff snapshots, export reports, expose everything to AI agents over MCP.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "escrow-sentinel": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "fixtures",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "npm run build && node --test",
+    "start": "node dist/cli.js",
+    "report": "node dist/cli.js report",
+    "fixtures:rebuild": "node scripts/build-fixture-from-evidence.mjs"
+  },
+  "keywords": [
+    "gibwork",
+    "solana",
+    "escrow",
+    "bounty",
+    "mcp",
+    "cli"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

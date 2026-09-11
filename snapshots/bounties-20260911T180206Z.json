@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "tool": {
+    "name": "escrow-sentinel",
+    "version": "0.1.0"
+  },
+  "snapshotId": "snap-2026-09-11T18:02:06Z",
+  "capturedAt": "2026-09-11T18:02:06Z",
+  "source": {
+    "kind": "live",
+    "exploreUrl": "https://api.gib.work/explore?page=1",
+    "detailUrlTemplate": "https://gib.work/bounty/{id}",
+    "vaultUrl": "https://api.gib.work/vaults",
+    "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+    "fixturePath": null,
+    "evidence": null
+  },
+  "warnings": [],
+  "bounties": [
+    {
+      "id": "1052f22d-3f87-4b1d-b0d7-71a60679e7fa",
+      "title": "Gibwork Developer Hackathon Bounty",
+      "url": "https://gib.work/bounty/1052f22d-3f87-4b1d-b0d7-71a60679e7fa",
+      "content": "Join this Gibwork Developer Hackathon bounty to create a new non-web-app use case for Gibwork using the SDK, CLI, or MCP. This bounty is focused on practical developer workflows, automations, integrations, or tooling that demonstrate a compelling way Gibwork can be used outside of traditional web applications.Bounty DescriptionThe selected participants will be responsible for:Designing and building a new Gibwork bounty use case that uses the SDK, CLI, or MCP in a meaningful and functional way.Focusing this bounty on non-web-app development, such as developer tooling, automation flows, terminal-based utilities, AI agent integrations, backend workflows, local productivity tools, or other creative bounty concepts.Implementing a working prototype that clearly shows how the bounty use case works, what problem it solves, and how Gibwork is integrated.Documenting the bounty solution so another developer can understand the setup, usage flow, and expected output.Providing a short demo of the completed bounty build, including the core workflow and successful execution.RequirementsThe bounty must use Gibwork SDK, CLI, or MCP as a core part of the implementation.The bounty must be a new use case, not a minor variation of an existing demo.The bounty must not be a web app, frontend dashboard, or browser-based product.The bounty should solve a real developer, operations, automation, research, or workflow problem with a clear practical outcome.The bounty submission must include clear setup instructions, dependencies, and steps to run or test the project.The submission should be functional, organized, and understandable enough for basic reviewer validation.Must attend at least 2 of the hackathon sessions on Discord.What to SubmitA public GitHub repository URL for the completed bounty project, including all source code and a README.A short written summary in the repository README or shared document explaining the bounty use case, why it is valuable, and which Gibwork toolset was used (SDK, CLI, or MCP).Setup and usage instructions for the bounty project, including installation steps, environment variables, commands to run, and sample input/output.A screen recording or demo video URL showing the bounty workflow from setup or execution through successful output.Screenshots of the bounty project running, such as terminal output, logs, agent interactions, or generated results.Any exported deliverables produced by the bounty project, such as output files, reports, generated artifacts, or shared document links, if applicable.How to startSubmit to the Google form https://docs.google.com/forms/d/e/1FAIpQLSejpks7hItR6zBUXpdrwgUDrwvEcmnJj6nlFbUXKIyNkVVfag/viewform?usp=dialogCheck Discord (https://discord.gg/2577tTsRt) to see if you have been rewarded the Hackathon role.Once rewarded the Discord role you can start the work.",
+      "tags": [
+        "Development"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-08T18:26:43.726Z",
+      "deadline": "2026-10-30T04:00:00.000Z",
+      "creator": "gibwork",
+      "xpBonus": 936,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "1000000000",
+        "advertisedValue": 1000
+      },
+      "advertisedPool": 1000,
+      "health": {
+        "status": "healthy",
+        "submissionCount": 0,
+        "approvedCount": 0,
+        "rejectedCount": 0,
+        "pendingCount": 0,
+        "rewardDensity": 1000,
+        "bountyUsd": 1000
+      },
+      "gating": {
+        "minSubmissionAmount": 50,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 0,
+        "maxSubmissions": null,
+        "requiredDiscordGuildId": "1004566368475164683",
+        "requiredDiscordRoleIds": [
+          "1546941199859060768"
+        ],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "9Nw5KFDj2vZsBJnQiYpKxpr9K2P1UkJGooLX9MtPWaEd",
+        "balance": 1000,
+        "totalDeposited": 1000,
+        "totalWithdrawn": 0,
+        "depositCount": 1,
+        "withdrawalCount": 0,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-08T18:26:43Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "9Nw5KFDj2vZsBJnQiYpKxpr9K2P1UkJGooLX9MtPWaEd",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220693,
+        "platformLedgerBalance": 1000,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 1000,
+        "onchainRawAmount": "1000000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "46nR1TtnWAcQq6M276uC1kg55SVitQeNZHU6NQ1TcgXf",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "cc14599e-ed38-4bdc-b55a-09cd8f8c1010",
+      "title": "Refer. Share. Win upto $300 USDC",
+      "url": "https://gib.work/bounty/cc14599e-ed38-4bdc-b55a-09cd8f8c1010",
+      "content": "Upto 30 Winners win upto $300 USDCSign up on defi.com and put your referral link to work!(Bonus rewards unlock for users with 5 or more successful referrals)It’s super simple to enter!How to EnterPost about defi.com on X and share your referral link.On gibwork, submit your registered email plus a public tweet link below for a review.Note:The submitted email must match the email you used while signing up.Quality posts only. Spam, or low-effort submissions will be disqualified.Multiple entries allowed.",
+      "tags": [
+        "Social Media"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-10T14:47:47.610Z",
+      "deadline": "2026-10-11T18:30:00.000Z",
+      "creator": "teamdefidotcom",
+      "xpBonus": 530,
+      "asset": {
+        "symbol": "CREDITS",
+        "mintAddress": "29bHTjaAH8VCLbsSxeGKFr3YeoQWf6BkStTgnCJmGsRT",
+        "decimals": 9,
+        "rawAmount": "120000000000",
+        "advertisedValue": 300
+      },
+      "advertisedPool": 300,
+      "health": {
+        "status": "CREATED",
+        "submissionCount": 185,
+        "approvedCount": null,
+        "rejectedCount": 18,
+        "pendingCount": 167,
+        "rewardDensity": null,
+        "bountyUsd": null
+      },
+      "gating": {
+        "minSubmissionAmount": 10,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 1,
+        "maxSubmissions": null,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "89rzwP3ReZj2DegybdayTsFGgEeAnAZvBYWre9PX5pmF",
+        "balance": 120,
+        "totalDeposited": 120,
+        "totalWithdrawn": 0,
+        "depositCount": 1,
+        "withdrawalCount": 0,
+        "symbol": "CREDITS",
+        "mintAddress": "29bHTjaAH8VCLbsSxeGKFr3YeoQWf6BkStTgnCJmGsRT",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-10T14:54:28Z",
+        "lastActivityType": "transfer",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "89rzwP3ReZj2DegybdayTsFGgEeAnAZvBYWre9PX5pmF",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220694,
+        "platformLedgerBalance": 120,
+        "platformLedgerMint": "29bHTjaAH8VCLbsSxeGKFr3YeoQWf6BkStTgnCJmGsRT",
+        "platformLedgerSymbol": "CREDITS",
+        "onchainAmount": 120,
+        "onchainRawAmount": "120000000000",
+        "onchainDecimals": 9,
+        "onchainMint": "29bHTjaAH8VCLbsSxeGKFr3YeoQWf6BkStTgnCJmGsRT",
+        "onchainOwner": "C2wwYCXET3gUD9Mc8U9RVo3SWLPXwq5QRyyzvjmmRgK9",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 0.4,
+        "flags": [
+          "coverage_partial",
+          "title_asset_hint_mismatch"
+        ],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "8d21b03d-1649-479c-91c7-b73023af08b3",
+      "title": "Share How You Actually Use BASIS Pick ONE Theme",
+      "url": "https://gib.work/bounty/8d21b03d-1649-479c-91c7-b73023af08b3",
+      "content": "We want to hear from people using BASIS (basis.pro) the market-neutral yield platform from Base58 Labs about how it fits into your real routine.Pick ONE theme below and post your take on X:1. How you use boosters and which asset you boost2. What you do when rewards land claim or re-stake3. How you keep track of your DRR4. What finally made you trust it with a real stake5. The goal behind your stake and your timeline6. How often you actually check your dashboard7. How you'd explain BASIS to a friend or family member8. Something you'd do differently if you were starting today9. Your asset split (BTC / ETH / SOL / PAXG) and why you picked it10. A moment you questioned it and what happened nextRequirements:- Original post in your own words, min 60 characters- Tag @basis__pro- Ad-style or promo-copy posts will be rejected- No copy-paste posts 80%+ similar to an existing submission will be rejected- Active account only brand-new or bot accounts will be rejected- Submit your post link to claimReward: First 100 approved submissions 1 USDC each. Rewards are released after we verify your post is live.",
+      "tags": [
+        "Social Media"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-11T08:27:22.600Z",
+      "deadline": "2026-09-25T08:20:54.473Z",
+      "creator": "basis",
+      "xpBonus": 870,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "200000000",
+        "advertisedValue": 200
+      },
+      "advertisedPool": 145,
+      "health": {
+        "status": "competitive",
+        "submissionCount": 214,
+        "approvedCount": 54,
+        "rejectedCount": 3,
+        "pendingCount": 157,
+        "rewardDensity": 0.9345794392523364,
+        "bountyUsd": 200
+      },
+      "gating": {
+        "minSubmissionAmount": 1,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 200,
+        "maxSubmissions": 50,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "HB7hhgifuUXDtifSEmtQSshsbRNvoUHgNecoVCnyJ8sX",
+        "balance": 145,
+        "totalDeposited": 200,
+        "totalWithdrawn": 55,
+        "depositCount": 2,
+        "withdrawalCount": 54,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-11T08:27:22Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "HB7hhgifuUXDtifSEmtQSshsbRNvoUHgNecoVCnyJ8sX",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220694,
+        "platformLedgerBalance": 145,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 145,
+        "onchainRawAmount": "145000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "62NUUfi13BbKymXPhbqzLdiNR7TZvUknmE3BE5M9mwbE",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "b3735fc5-991c-45e6-aea0-8755314acb0c",
+      "title": "Introduce Yourself to the Community",
+      "url": "https://gib.work/bounty/b3735fc5-991c-45e6-aea0-8755314acb0c",
+      "content": "There’s a person behind every username, and we’d love to meet you.Post a 30–60 second intro video in our Discord so other freelancers, builders, and bounty participants can get to know you and discover what you could work on together.What should you share?Tell us a little about yourself:What should we call you? Your name or username is fine.What do you enjoy working on? Share a skill you have or something you’re learning.What kind of work interests you? Tell us which freelance opportunities or bounties you’d like to take on.What’s something that makes you, you? A hobby, a project you’re proud of, or something you’re excited about.These are conversation starters, not a script. Talk like you’re introducing yourself to a new teammate.Keep it realNo fancy equipment, editing, or professional experience needed. A simple phone video with clear audio is enough.Use your own voice and your own words—no AI avatars, generated voices, or copied introductions. You don’t need to promote Gibwork or tell us how great the platform is. We want to learn about you.Only share details you’re comfortable making public.How to submitPost your video in #👋|introduce-yourself channel, then submit the direct link to your Discord message as your bounty submission.While you’re there, say hello to someone whose introduction catches your interest. You might find your next collaborator.Rewards will be random based on quality and engagement in the #👋|introduce-yourself channel",
+      "tags": [
+        "Design"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-06T15:46:45.935Z",
+      "deadline": "2026-09-20T15:39:40.569Z",
+      "creator": "anthony",
+      "xpBonus": 881,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "130000000",
+        "advertisedValue": 130
+      },
+      "advertisedPool": 120,
+      "health": {
+        "status": "stale",
+        "submissionCount": 49,
+        "approvedCount": 1,
+        "rejectedCount": 0,
+        "pendingCount": 48,
+        "rewardDensity": 2.6530612244897958,
+        "bountyUsd": 130
+      },
+      "gating": {
+        "minSubmissionAmount": 1,
+        "allowOnlyVerifiedSubmissions": true,
+        "minTwitterFollowers": 0,
+        "maxSubmissions": 50,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "FWZiZ4FFiGV21xDZBoYoxV56SVHC9Z2XDsyCpovhcSsx",
+        "balance": 120,
+        "totalDeposited": 130,
+        "totalWithdrawn": 10,
+        "depositCount": 1,
+        "withdrawalCount": 1,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-06T15:46:45Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "FWZiZ4FFiGV21xDZBoYoxV56SVHC9Z2XDsyCpovhcSsx",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220694,
+        "platformLedgerBalance": 120,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 120,
+        "onchainRawAmount": "120000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "Fikvtu4J1htV7LnBrJGBGLyG4JYthXcv4ptaCShiMUjD",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "53b0737a-3a6b-475b-a965-4a2a00016875",
+      "title": "Create an X thread for Paid Requests",
+      "url": "https://gib.work/bounty/53b0737a-3a6b-475b-a965-4a2a00016875",
+      "content": "Requires Verified X account with 200+ followers.This bounty is for creating a clear, up-to-date X thread that explains the Gibwork Paid Request feature using the latest platform update. The goal of this bounty is to publish an informative thread that helps viewers understand how the feature works, what problem it solves, and how it appears in the live product through real screenshots.Bounty DescriptionThe selected participant will be responsible for this bounty:Create a concise X thread describing the Gibwork Paid Request feature, including what it is, who it is for, and how users can use it.Use the latest available Gibwork update for this bounty so the thread reflects the current interface, flow, and functionality.Include actual screenshots from the platform in this bounty thread to visually demonstrate the Paid Request feature.Write the bounty thread in a professional, easy-to-follow format with a strong opening post and logical post-by-post structure.Highlight key details in this bounty thread such as feature benefits, primary user actions, and any important steps in the Paid Request flow.RequirementsMust be published as an X thread, not a single post.Must use real, current screenshots from the latest Gibwork update and not outdated, mocked, or heavily edited visuals.Must accurately describe the Paid Request feature without misleading claims.Should be written in clear English with strong readability, correct grammar, and clean formatting.Should include enough detail for a new user to understand the feature from the thread alone.Must keep branding and terminology consistent with Gibwork as shown in the latest update.What to SubmitPublic URL to the completed X thread.",
+      "tags": [
+        "Social Media"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-08-29T15:23:25.455Z",
+      "deadline": "2026-09-12T15:20:33.153Z",
+      "creator": "gibwork",
+      "xpBonus": 375,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "125000000",
+        "advertisedValue": 125
+      },
+      "advertisedPool": 125,
+      "health": {
+        "status": "paused",
+        "submissionCount": 139,
+        "approvedCount": 0,
+        "rejectedCount": 0,
+        "pendingCount": 139,
+        "rewardDensity": 0.8992805755395683,
+        "bountyUsd": 125
+      },
+      "gating": {
+        "minSubmissionAmount": 5,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 200,
+        "maxSubmissions": null,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "CUAPvvnkJX6zs37cep7YrYqLpkTo1sC3nvfjupG1RfBY",
+        "balance": 125,
+        "totalDeposited": 125,
+        "totalWithdrawn": 0,
+        "depositCount": 1,
+        "withdrawalCount": 0,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-08-29T15:23:25Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "CUAPvvnkJX6zs37cep7YrYqLpkTo1sC3nvfjupG1RfBY",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220696,
+        "platformLedgerBalance": 125,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 125,
+        "onchainRawAmount": "125000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "A81zEcWf9DmTaoWFDQradJGUyUVLtBKFMXqbd5SSfPwq",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "ce839876-bf1f-42b7-914b-dd59f8fea1fb",
+      "title": "Axzra outreach Agent's Bounty ",
+      "url": "https://gib.work/bounty/ce839876-bf1f-42b7-914b-dd59f8fea1fb",
+      "content": "We’re putting up a 𝗯𝗼𝘂𝗻𝘁𝘆 for Axzra Agents.The 𝗳𝗶𝗿𝘀𝘁 𝗮𝗴𝗲𝗻𝘁 to successfully close a deal worth $500 or more will win.𝗛𝗼𝘄 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀You earn 15% of the deal value in total:• 10% paid through Gibwork• 5% agent commission from AxzraFor example, a $500 deal gets you $50 on Gibwork + $25 commission = $75 total.A $700 deal gets you $70 on Gibwork + $35 commission = $105 total.If the first agent closes a deal worth over $500, more funds will be added to this bounty pool𝗪𝗵𝗼 𝗾𝘂𝗮𝗹𝗶𝗳𝗶𝗲𝘀?To qualify, you must:• Be part of the Axzra Agents Program• Follow us on X: Axzrahub• Be a member of our Discord• Complete the Agents training program • Successfully close a $500+ deal for AxzraYou must also ensure the work is completed and payment has been fully issued before the reward is released.𝗢𝗻𝗹𝘆 𝘁𝗵𝗲 𝗳𝗶𝗿𝘀𝘁 𝗮𝗴𝗲𝗻𝘁 𝘁𝗼 𝗰𝗹𝗼𝘀𝗲 𝗮 𝗾𝘂𝗮𝗹𝗶𝗳𝘆𝗶𝗻𝗴 𝗱𝗲𝗮𝗹 𝘄𝗶𝗻𝘀.No complicated process. Once everything is completed and payment is confirmed, the winner will be announced and paid immediately.𝗡𝗼𝘁 𝗮𝗻 𝗔𝗴𝗲𝗻𝘁 𝘆𝗲𝘁?Apply to become an Axzra AgentIf outreach isn’t your thing, you can also apply to join our freelancer network so we can reach out to you when we have gigs that match your skills.𝗥𝗲𝗮𝗱 𝗺𝗼𝗿𝗲: Terms &amp; Conditions Join our Discord Server for more updates and information𝗧𝗵𝗲 𝗿𝗮𝗰𝗲 𝗶𝘀 𝗼𝗻. 𝗚𝗼 𝗰𝗹𝗼𝘀𝗲 𝘁𝗵𝗮𝘁 𝗱𝗲𝗮𝗹.",
+      "tags": [
+        "Development"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-03T17:28:15.354Z",
+      "deadline": "2026-09-18T23:00:00.000Z",
+      "creator": "jaysmith",
+      "xpBonus": 408,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "50000000",
+        "advertisedValue": 50
+      },
+      "advertisedPool": 50,
+      "health": {
+        "status": "healthy",
+        "submissionCount": 6,
+        "approvedCount": 0,
+        "rejectedCount": 1,
+        "pendingCount": 5,
+        "rewardDensity": 8.333333333333334,
+        "bountyUsd": 50
+      },
+      "gating": {
+        "minSubmissionAmount": 50,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 0,
+        "maxSubmissions": null,
+        "requiredDiscordGuildId": "1508240517111091341",
+        "requiredDiscordRoleIds": [
+          "1508256164780052692"
+        ],
+        "allowOnlyDiscordGuildSubmissions": true
+      },
+      "ledger": {
+        "address": "4eFyyg589rjVWwaHumXad7RjrmFyZYukspCbBmwytwue",
+        "balance": 50,
+        "totalDeposited": 50,
+        "totalWithdrawn": 0,
+        "depositCount": 1,
+        "withdrawalCount": 0,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-03T17:28:15Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "4eFyyg589rjVWwaHumXad7RjrmFyZYukspCbBmwytwue",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220697,
+        "platformLedgerBalance": 50,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 50,
+        "onchainRawAmount": "50000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "2JnFAnRtRcyTo294Uf8AyCDzvaPPFDif31DMWYZRPPWB",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "18ccc3d3-789d-40bf-a061-ac1a8f2db790",
+      "title": "Write an X post about Velo (Hedera DeFi)",
+      "url": "https://gib.work/bounty/18ccc3d3-789d-40bf-a061-ac1a8f2db790",
+      "content": "We're looking for an original X post explaining what Velo is and why it matters.Velo (veloexchange.org) is a non-custodial DEX and staking protocol built natively on Hedera:- Swaps route on-chain through real SaucerSwap V2 pools — no custodial \"brokerage\" middleman.- Staking runs through a vault contract with zero admin functions — not even the Velo team can move a user's staked HBAR.- Supports both MetaMask/EVM wallets and native HashPack (ED25519) wallets.- Real on-chain activity (swaps, stakes, transfers) earns XP, tracked on a public leaderboard and synced to Discord roles.Requirements:- Original tweet (not a retweet/quote-only) written in your own words — no copy-pasted marketing copy.- Must accurately describe what Velo does (see above) — factual errors will be rejected.- Tag @Velo_dApp and use #Hedera.- Minimum [X] followers, account must be active/not brand-new (see filters below).- Submit the tweet link to claim.Bonus (higher priority for payout): posts that include original media — a short video walkthrough or an infographic showing how Velo works (e.g. the swap flow, the non-custodial staking vault, or dual-wallet support) will be prioritized over text-only posts.Payment released after we verify the post is live and meets the above.",
+      "tags": [
+        "Social Media"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-08-12T20:27:42.900Z",
+      "deadline": "2026-09-11T23:00:00.000Z",
+      "creator": "kazamsingap",
+      "xpBonus": 214,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "30000000",
+        "advertisedValue": 30
+      },
+      "advertisedPool": 4,
+      "health": {
+        "status": "overcrowded",
+        "submissionCount": 134,
+        "approvedCount": 8,
+        "rejectedCount": 91,
+        "pendingCount": 35,
+        "rewardDensity": 0.22388059701492538,
+        "bountyUsd": 30
+      },
+      "gating": {
+        "minSubmissionAmount": 2,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 1,
+        "maxSubmissions": 30,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "J1tVc7njjDaW8sF4x74mRedJwqR8TkQsb8bx4bBQZRXr",
+        "balance": 4,
+        "totalDeposited": 30,
+        "totalWithdrawn": 26,
+        "depositCount": 1,
+        "withdrawalCount": 8,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-08-12T20:27:43Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "J1tVc7njjDaW8sF4x74mRedJwqR8TkQsb8bx4bBQZRXr",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220697,
+        "platformLedgerBalance": 4,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 4,
+        "onchainRawAmount": "4000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "2p5gwww9aNmXkNhMjuc8uoxJoXeoDED4sK7pSUoXQbFZ",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "e2e5aaca-3749-434f-bfd2-ffa3c6f0a9b3",
+      "title": "Engage with @DHiveWorkng on Twitter/X",
+      "url": "https://gib.work/bounty/e2e5aaca-3749-434f-bfd2-ffa3c6f0a9b3",
+      "content": "Bounty DescriptionComplete this bounty by engaging with posts from the Twitter/X account @DHiveWorkng.• Follow the @DHiveWorkng account.• Like, comment on, and quote the pinned post.• Like, comment on, and quote 2 other posts from the same account..make sure to watch 20 seconds of the video Requirements• Comments for this bounty must be thoughtful and relevant, not one-word phrases.• Complete all required interactions from a real Twitter/X account.• The 2 additional posts for this bounty must be posts from @DHiveWorkng.What to Submit• A short screen recording or clear screenshots showing the follow plus all likes, comments, and quote posts completed for this bounty.• Links or screenshots that clearly show the pinned post and the 2 other posts used for this bounty.",
+      "tags": [
+        "Social Media"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-11T15:45:53.392Z",
+      "deadline": "2026-09-25T15:32:09.822Z",
+      "creator": "chibuzoramos2",
+      "xpBonus": 62,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "10000000",
+        "advertisedValue": 10
+      },
+      "advertisedPool": 10,
+      "health": {
+        "status": "overcrowded",
+        "submissionCount": 30,
+        "approvedCount": 0,
+        "rejectedCount": 0,
+        "pendingCount": 30,
+        "rewardDensity": 0.3333333333333333,
+        "bountyUsd": 10
+      },
+      "gating": {
+        "minSubmissionAmount": 1,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 0,
+        "maxSubmissions": 10,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "FD1pd5dJx6qtHfTKxLBUFgvCRPXu9VXQKTQfo3nTsJTu",
+        "balance": 10,
+        "totalDeposited": 10,
+        "totalWithdrawn": 0,
+        "depositCount": 1,
+        "withdrawalCount": 0,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-11T15:45:53Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "FD1pd5dJx6qtHfTKxLBUFgvCRPXu9VXQKTQfo3nTsJTu",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220698,
+        "platformLedgerBalance": 10,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 10,
+        "onchainRawAmount": "10000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "8tYGHNT5ajhjAGEpvoAs8ADGSFiBDoSTSHGD1TCn5WeV",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    },
+    {
+      "id": "ebf78998-24c3-426f-a0b0-81d0698d9bd9",
+      "title": "Flaunt your Verychat Login Streaks",
+      "url": "https://gib.work/bounty/ebf78998-24c3-426f-a0b0-81d0698d9bd9",
+      "content": "Time to reward consistency as promised There are 2 ways to earn:\r\rWAY 1: Already on Verychat?\rUpload a screenshot of your longest login streak\r\rWAY 2: New to Verychat?\r1. Download the Verychat App\r   Link: https://invite.verychat.io/dbabefloxy\r2. Register using ref code: Dbabefloxy \r    Must use this exact code during signup\r3. Create a Username \r4. Keep a 3 day login streak and submit proof\r\r How to Submit Proof\rSubmit screenshots showing:\r1. Your Verychat profile page with username visible\r2. Screenshot of your login streak / 3-day activity log from the app\r\rAll screenshots in 1 submission\r\r RULES\r- One submission per person\r- Referral code Dbabefloxy must be used for new users or submission will be rejected\r- Account must be active for 3 consecutive days\r\r\rKeep the app active. Subsequent bounties will focus more on consistency and app usage.",
+      "tags": [
+        "Development"
+      ],
+      "status": "CREATED",
+      "isOpen": true,
+      "createdAt": "2026-09-09T14:20:57.709Z",
+      "deadline": "2026-09-16T14:16:29.852Z",
+      "creator": "dbabefloxy",
+      "xpBonus": 26,
+      "asset": {
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "decimals": 6,
+        "rawAmount": "5000000",
+        "advertisedValue": 5
+      },
+      "advertisedPool": 4,
+      "health": {
+        "status": "stale",
+        "submissionCount": 20,
+        "approvedCount": 1,
+        "rejectedCount": 0,
+        "pendingCount": 19,
+        "rewardDensity": 0.25,
+        "bountyUsd": 5
+      },
+      "gating": {
+        "minSubmissionAmount": 1,
+        "allowOnlyVerifiedSubmissions": false,
+        "minTwitterFollowers": 0,
+        "maxSubmissions": 10,
+        "requiredDiscordGuildId": null,
+        "requiredDiscordRoleIds": [],
+        "allowOnlyDiscordGuildSubmissions": false
+      },
+      "ledger": {
+        "address": "8QnzG972dQktNbEvYyogbkpg3gicY3vnoCFhGUmoGt2w",
+        "balance": 4,
+        "totalDeposited": 5,
+        "totalWithdrawn": 1,
+        "depositCount": 1,
+        "withdrawalCount": 1,
+        "symbol": "USDC",
+        "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "isAccountClosed": false,
+        "lastActivityAt": "2026-09-09T14:20:58Z",
+        "lastActivityType": "deposit",
+        "source": "api.gib.work/vaults"
+      },
+      "verification": {
+        "evidence": "live",
+        "checkedAt": "2026-09-11T18:05:33Z",
+        "escrowAddress": "8QnzG972dQktNbEvYyogbkpg3gicY3vnoCFhGUmoGt2w",
+        "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+        "slot": 446220699,
+        "platformLedgerBalance": 4,
+        "platformLedgerMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "platformLedgerSymbol": "USDC",
+        "onchainAmount": 4,
+        "onchainRawAmount": "4000000",
+        "onchainDecimals": 6,
+        "onchainMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "onchainOwner": "YY4drGSLGH7eywpcR9DqTKyMMeHoZwLssKqn4jTMMgR",
+        "mintMatchesLedger": true,
+        "assetMatchesAdvertised": true,
+        "coverage": 1,
+        "flags": [],
+        "reason": null,
+        "status": "verified"
+      },
+      "provenance": {
+        "source": "live",
+        "capturedAt": "2026-09-11T18:02:06Z",
+        "note": "https://api.gib.work/explore?page=1"
+      }
+    }
+  ]
+}
