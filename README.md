@@ -54,6 +54,19 @@ in a terminal or as an MCP stdio server inside Claude Code / Codex / Cursor.
 
 ### Which Gibwork toolset is used
 
+**MCP, plus Gibwork's own public HTTP API.** This repo ships its own read-only MCP
+server (`gib_list_bounties`, `gib_verify_escrow`, `gib_snapshot_diff`, `gib_report`)
+over stdio, and a full side-by-side run against the **official** `@gibwork/mcp`
+v0.3.0 is captured in [`docs/GIBWORK-TOOLSET-CAPTURE.md`](docs/GIBWORK-TOOLSET-CAPTURE.md)
+with raw stdout in [`docs/captures/`](docs/captures/).
+
+The gap that capture shows: the official server refuses every data call — including
+plain discovery — without a wallet keypair (`CREDENTIAL_ERROR`), and it never reads
+an escrow account. Escrow Sentinel needs no wallet at all, so an agent holding only a
+public address can still triage: 9/9 bounties discovered from Gibwork's public listing
+endpoint, each escrow token account read on-chain (9 verified / 0 mismatch / 0 unknown
+at 2026-09-11T18:40:43Z), the hackathon bounty itself ranked #1.
+
 **MCP.** The core integration of this project is an MCP server: Escrow Sentinel
 speaks MCP over stdio and exposes four read-only tools
 (`gib_list_bounties`, `gib_verify_escrow`, `gib_snapshot_diff`, `gib_report`) to

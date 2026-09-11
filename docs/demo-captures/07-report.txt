@@ -1,0 +1,19 @@
+escrow-sentinel v0.1.0 — report
+snapshot   snap-2026-09-11T18:35:25Z  source=live  rows=9
+escrow     9 verified / 0 mismatch / 0 unknown
+diff       0 new, 0 gone, 0 changed, 9 unchanged
+
+#    Score  Bounty                                           Value used  Subs  Escrow    Coverage
+───  ─────  ───────────────────────────────────────────────  ──────────  ────  ────────  ────────
+1    87.9   Gibwork Developer Hackathon Bounty               1000 USDC   0     verified  100%
+2    63.0   Create an X thread for Paid Requests             125 USDC    139   verified  100%
+3    61.0   Introduce Yourself to the Community              120 USDC    49    verified  100%
+4    60.6   Share How You Actually Use BASIS Pick ONE Theme  145 USDC    216   verified  100%
+5    59.5   Axzra outreach Agent's Bounty                    50 USDC     6     verified  100%
+
+markdown   reports/20260911T183525Z/report.md
+csv        reports/20260911T183525Z/report.csv
+json       reports/20260911T183525Z/report.json
+snapshot   reports/20260911T183525Z/snapshot.json
+diff       reports/20260911T183525Z/diff.md
+saved      snapshots/bounties-20260911T183525Z.json

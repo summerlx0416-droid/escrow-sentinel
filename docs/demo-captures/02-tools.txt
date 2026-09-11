@@ -1,0 +1,21 @@
+{
+  "name": "escrow-sentinel",
+  "version": "0.1.0",
+  "protocolVersion": "2025-06-18",
+  "tools": [
+    "gib_list_bounties",
+    "gib_verify_escrow",
+    "gib_snapshot_diff",
+    "gib_report"
+  ],
+  "transport": "stdio",
+  "readOnly": true,
+  "config": {
+    "source": "auto",
+    "exploreUrl": "https://api.gib.work/explore?page=1",
+    "vaultUrl": "https://api.gib.work/vaults",
+    "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+    "fixturesDir": "fixtures",
+    "snapshotsDir": "snapshots"
+  }
+}

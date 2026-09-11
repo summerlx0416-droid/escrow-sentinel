@@ -1,0 +1,27 @@
+# Escrow Sentinel — snapshot diff
+
+- Generated: 2026-09-11T18:35:21Z
+- Old: fixture-20260911T173421Z (2026-09-11T17:34:21Z) — 10 bounties
+- New: snap-2026-09-11T18:35:07Z (2026-09-11T18:35:07Z) — 9 bounties
+
+## Summary
+
+- 0 new, 1 gone, 5 changed, 4 unchanged
+- - closed/removed: Social engagement bounty for X post and Medium article (pool 2)
+- ~ Refer. Share. Win upto $300 USDC: submissionCount null -> 188
+- ~ Share How You Actually Use BASIS Pick ONE Theme: submissionCount 214 -> 216
+- ~ Write an X post about Velo (Hedera DeFi): submissionCount 134 -> 135
+- ~ Engage with @DHiveWorkng on Twitter/X: submissionCount 28 -> 31
+- ~ Flaunt your Verychat Login Streaks: submissionCount 19 -> 20
+
+## Changed fields
+
+| Bounty | Field | Before | After |
+| --- | --- | --- | --- |
+| Refer. Share. Win upto $300 USDC | submissionCount | — | 188 |
+| Share How You Actually Use BASIS Pick ONE Theme | submissionCount | 214 | 216 |
+| Write an X post about Velo (Hedera DeFi) | submissionCount | 134 | 135 |
+| Engage with @DHiveWorkng on Twitter/X | submissionCount | 28 | 31 |
+| Flaunt your Verychat Login Streaks | submissionCount | 19 | 20 |
+
+

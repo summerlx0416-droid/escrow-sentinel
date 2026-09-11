@@ -1,0 +1,29 @@
+escrow-sentinel v0.1.0 — read-only Gibwork bounty radar with on-chain escrow checks.
+
+Usage: node dist/cli.js <command> [options]
+
+Commands:
+  discover   Fetch the public Gibwork bounty listing (fixture fallback) and save a snapshot.
+  verify     Read every escrow token account on Solana and compare it with the platform ledger.
+  rank       Score and rank the bounties in the newest snapshot (value / competition / deadline).
+  diff       Compare two snapshots (default: previous vs latest) and print the changes.
+  report     discover + verify + rank + diff, writing report.md / report.csv / report.json.
+  mcp        Start the read-only MCP stdio server (gib_list_bounties, gib_verify_escrow, gib_snapshot_diff, gib_report).
+  tools      Print the MCP server card (tool list + effective config) as JSON.
+  help       Show this text.
+
+Options:
+  --source <auto|live|fixture>  Discovery source (default auto: live API, fixture fallback).
+  --fixture <path>              Explicit fixture/snapshot file to read.
+  --snapshot <path>             Explicit snapshot file to read (verify/rank).
+  --rpc <url>                   Solana RPC endpoint (default https://api.mainnet-beta.solana.com).
+  --no-rpc                      Do not call any RPC endpoint.
+  --offline                     No network at all: replay the fixture and the verifications already stored in the snapshot.
+  --enrich / --no-enrich        Fetch bounty detail pages for submission counts (default on).
+  --vault / --no-vault          Resolve escrow addresses via the public vault endpoint (default on).
+  --top <n>                     Number of ranked rows (default 5).
+  --limit <n>                   Limit rows returned by discovery.
+  --now <iso>                   Fix "now" for deterministic scoring.
+  --json                        Machine readable output on stdout.
+  --out <path>                  Write diff/json output to a file.
+  --out-dir <dir>               Report output directory (default reports/).

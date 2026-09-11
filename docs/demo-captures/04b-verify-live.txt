@@ -1,0 +1,18 @@
+escrow-sentinel v0.1.0 — verify
+snapshot   snapshots/bounties-20260911T183507Z.json
+rpc        https://api.mainnet-beta.solana.com
+
+Status    Bounty                                           Platform  On-chain     Coverage  Flags
+────────  ───────────────────────────────────────────────  ────────  ───────────  ────────  ───────────────────────────────────────────
+verified  Gibwork Developer Hackathon Bounty               1000      1000 USDC    100%      —
+verified  Refer. Share. Win upto $300 USDC                 120       120 CREDITS  40%       coverage_partial, title_asset_hint_mismatch
+verified  Share How You Actually Use BASIS Pick ONE Theme  145       145 USDC     100%      —
+verified  Introduce Yourself to the Community              120       120 USDC     100%      —
+verified  Create an X thread for Paid Requests             125       125 USDC     100%      —
+verified  Axzra outreach Agent's Bounty                    50        50 USDC      100%      —
+verified  Write an X post about Velo (Hedera DeFi)         4         4 USDC       100%      —
+verified  Engage with @DHiveWorkng on Twitter/X            10        10 USDC      100%      —
+verified  Flaunt your Verychat Login Streaks               4         4 USDC       100%      —
+
+summary    9 verified / 0 mismatch / 0 unknown  (of 9)
+saved      snapshots/bounties-20260911T183507Z.json

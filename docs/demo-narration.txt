@@ -1,0 +1,102 @@
+# Escrow Sentinel — demo narration
+# Language: English.  Video: docs/demo/escrow-sentinel-demo.mp4 (1080p, H.264, burned-in captions)
+# Total runtime: 261.0 s (4m21.0s). One line per segment.
+# No audio track was recorded: the caption text below is burned into every frame and can be
+# used, verbatim, as the voice-over. Timestamps are the [start-end] of each segment in the file.
+
+[00:00.0-00:14.0] 01 demo — title  (14s)
+    VO: Escrow Sentinel: a read-only Gibwork bounty radar. A CLI plus an MCP server, TypeScript, MIT, no
+    VO: wallet and no API key. Entered in the Gibwork Developer Hackathon Bounty — 1000 USDC escrow.
+    frame: docs/demo/frames/01-title.png
+
+[00:14.0-00:30.0] 02 the gap in the listing  (16s)
+    VO: A bounty listing shows the headline, not the money. This row advertises $300 USDC, but the listing
+    VO: asset is CREDITS and the on-chain escrow holds 120 — 40% of the advertised pool.
+    frame: docs/demo/frames/02-problem.png
+
+[00:30.0-00:44.0] 03 setup + command surface  (14s)
+    VO: Start from the command surface: discover, verify, rank, diff, report, mcp, tools. No wallet, key or
+    VO: account is needed or read — the tool is read-only by construction.
+    frame: docs/demo/frames/03-help.png
+
+[00:44.0-00:56.0] 04 MCP server card  (12s)
+    VO: tools prints the server card: four read-only tools over stdio, and the effective config with the RPC
+    VO: endpoint redacted to scheme://host.
+    frame: docs/demo/frames/04-tools.png
+
+[00:56.0-01:12.0] 05 discover — public listing  (16s)
+    VO: discover reads the same public listing endpoint the Gibwork site calls, enriches each bounty from
+    VO: its detail page, and writes a UTC-stamped snapshot.
+    frame: docs/demo/frames/05-discover.png
+
+[01:12.0-01:30.0] 06 verify — Solana mainnet  (18s)
+    VO: verify asks the platform for each escrow token account and reads it directly from Solana: 9
+    VO: verified, 0 mismatch, 0 unknown. The CREDITS row is flagged instead of being rounded up.
+    frame: docs/demo/frames/06-verify.png
+
+[01:30.0-01:44.0] 07 verify --offline  (14s)
+    VO: verify --offline opens no socket at all: rpc disabled, every row replayed from the verification
+    VO: stored in the snapshot, keeping its original evidence label and timestamp.
+    frame: docs/demo/frames/07-verify-offline.png
+
+[01:44.0-02:00.0] 08 rank — value / competition / deadline  (16s)
+    VO: rank scores chain-first value, competition, deadline urgency, escrow trust and coverage — the
+    VO: formula is printed on screen. The hackathon bounty scores 87.9: 1000 USDC verified, zero
+    VO: submissions, 48.4 days left.
+    frame: docs/demo/frames/08-rank.png
+
+[02:00.0-02:16.0] 09 diff — baseline vs today  (16s)
+    VO: diff compares the committed baseline with today's capture: one bounty closed and dropped off the
+    VO: board, five submission counts moved — the CREDITS row went from unknown to 188 entries.
+    frame: docs/demo/frames/09-diff.png
+
+[02:16.0-02:32.0] 10 report — full pipeline  (16s)
+    VO: report runs the whole pipeline once: 9 verified, 0 mismatch, 0 unknown, and the top five ranked rows
+    VO: in one pass.
+    frame: docs/demo/frames/10-report.png
+
+[02:32.0-02:42.0] 11 exported artifacts  (10s)
+    VO: Each report run writes five artifacts: report.md for humans, report.csv for spreadsheets,
+    VO: report.json for other tools, the full snapshot.json, and diff.md.
+    frame: docs/demo/frames/11-report-files.png
+
+[02:42.0-02:56.0] 12 report.md  (14s)
+    VO: The Markdown report keeps the provenance: every escrow row shows the token account, the platform
+    VO: ledger, the on-chain amount, the status and the evidence timestamp.
+    frame: docs/demo/frames/12-report-md.png
+
+[02:56.0-03:10.0] 13 MCP over stdio  (14s)
+    VO: The same engine is an MCP server on stdio. A client sends initialize and tools/list; the server
+    VO: answers with four read-only tools — no write path anywhere in the protocol.
+    frame: docs/demo/frames/13-mcp-handshake.png
+
+[03:10.0-03:24.0] 14 gib_list_bounties (1/2)  (14s)
+    VO: An agent asks the real question — verified escrow only, value at least 50 USD, top 3 — and gets
+    VO: chain-verified rows back, starting with the hackathon bounty: 1000 USDC and valueBasis "onchain".
+    frame: docs/demo/frames/14-mcp-list-bounties-a.png
+
+[03:24.0-03:36.0] 15 gib_list_bounties (2/2)  (12s)
+    VO: Same response, continued: the escrow token account, the platform ledger, the on-chain amount at
+    VO: Solana slot 446226443, coverage 1, and the flags that explain the row.
+    frame: docs/demo/frames/15-mcp-list-bounties-b.png
+
+[03:36.0-03:50.0] 16 gib_verify_escrow  (14s)
+    VO: gib_verify_escrow also takes a raw Solana token account, which makes it a general "is this escrow
+    VO: funded?" tool inside an agent session. The response is the complete real payload.
+    frame: docs/demo/frames/16-mcp-verify-escrow.png
+
+[03:50.0-04:02.0] 17 npm test (1/2)  (12s)
+    VO: Nothing in this video is hand-written sample output. cmd /c npm test rebuilds the TypeScript and
+    VO: runs the whole suite — no network required.
+    frame: docs/demo/frames/17-tests-a.png
+
+[04:02.0-04:14.0] 18 npm test (2/2)  (12s)
+    VO: 46 tests, 0 failures — including the cases that prove a failed RPC, a missing token account or a
+    VO: rate-limited endpoint degrade to unknown instead of inventing a balance.
+    frame: docs/demo/frames/18-tests-b.png
+
+[04:14.0-04:30.0] 19 close  (16s)
+    VO: Read-only by construction: no wallet, no key, no signature. Money is either proven on-chain or
+    VO: reported as unknown — never a guess. Repo and license on screen; built with AI coding assistants as
+    VO: a pair-programming tool.
+    frame: docs/demo/frames/19-close.png

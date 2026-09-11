@@ -1,0 +1,1 @@
+escrow-sentinel MCP server ready (stdio, read-only, 4 tools)

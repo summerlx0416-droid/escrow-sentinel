@@ -1,0 +1,62 @@
+
+> escrow-sentinel@0.1.0 test
+> npm run build && node --test
+
+
+> escrow-sentinel@0.1.0 build
+> tsc -p tsconfig.json
+
+✔ cli: discover --source fixture --offline --json returns the committed snapshot as JSON (155.3166ms)
+✔ cli: rank --json honours --top on the newest snapshot (179.3849ms)
+✔ cli: verify --offline replays recorded evidence and never claims a live check (151.7716ms)
+✔ cli: discover falls back to the fixture when the live API is unreachable (1619.2027ms)
+✔ cli: the MCP stdio server answers initialize and tools/list over pipes (73.4443ms)
+✔ cli: an unknown command exits with code 2 and prints usage (79.7053ms)
+✔ diff: detects added, removed and field-level changes between two snapshots (3.0221ms)
+✔ diff: identical snapshots report no changes (0.818ms)
+✔ fixture: committed snapshot keeps the 10 real W-A captures with recorded escrow evidence (3.2777ms)
+✔ fixture: every row has an escrow address, a recorded check and no invented numbers (1.8958ms)
+✔ fixture: the $300 CREDITS bounty is flagged as partially funded and label-mismatched (0.7357ms)
+✔ test\helpers.mjs (114.4558ms)
+✔ mcp: exposes the three required read-only tools plus a full report tool (1.1205ms)
+✔ mcp: initialize handshake negotiates the protocol version and lists capabilities (1.1574ms)
+✔ mcp: tools/list is served and notifications get no reply (0.2652ms)
+✔ mcp: gib_verify_escrow verifies a raw escrow address with the injected RPC client (1.9163ms)
+✔ mcp: gib_verify_escrow reports unknown when the RPC call fails (0.4404ms)
+✔ mcp: gib_snapshot_diff compares the committed fixture with itself and gib_list_bounties works offline (4.8396ms)
+✔ mcp: unknown tool names come back as an error result, not a crash (0.19ms)
+✔ normalize: explore payload maps onto the bounty model and skips malformed rows (0.9248ms)
+✔ normalize: detail extraction reads health metrics and gating from the escaped flight payload (1.514ms)
+✔ normalize: expired bounty pages lose `health` but keep counters, and CLOSED flips isOpen (0.6946ms)
+✔ report: CSV has a stable header, one row per ranked bounty and escaped commas (2.2302ms)
+✔ report: markdown carries the ranking, escrow evidence and the method section (0.8039ms)
+✔ report: JSON payload exposes ranking, escrow status and provenance (0.6906ms)
+✔ report: writeReports creates report.md / report.csv / report.json / snapshot.json + diff.md (6.6312ms)
+✔ rpc: getAccountInfo jsonParsed is mapped onto a token account (38.2596ms)
+✔ rpc: a missing account returns null instead of throwing (9.0799ms)
+✔ rpc: getTokenAccountBalance parses the balance envelope (6.083ms)
+✔ rpc: JSON-RPC errors and HTTP 429 both surface as RpcError (10.9675ms)
+✔ score: more on-chain value ranks higher, and value is capped at the ceiling (1.7434ms)
+✔ score: unknown escrow falls back to the platform number but loses trust points (0.3059ms)
+✔ score: a mismatch is heavily penalised and flagged (0.2617ms)
+✔ score: competition and deadline both move the score in the expected direction (0.4159ms)
+✔ score: assets without a USD peg are never converted with an invented rate (0.2662ms)
+✔ rank: sorted by score descending with a deterministic id tie-break and a working top-N (1.1379ms)
+✔ rank: closed bounties are filtered out when onlyOpen is requested (0.3016ms)
+✔ verify: matching ledger and chain balance resolve to verified with full coverage (2.4935ms)
+✔ verify: a smaller on-chain balance than the ledger is a mismatch (0.4377ms)
+✔ verify: an RPC failure degrades to unknown instead of inventing a balance (0.3453ms)
+✔ verify: a missing escrow token account is unknown, not verified (0.1749ms)
+✔ verify: a failing vault lookup leaves the row unknown with a clear reason (506.5244ms)
+✔ verify: offline replay keeps recorded evidence and never calls the RPC (0.2196ms)
+✔ verify: offline replay of a snapshot also keeps an earlier live check untouched (0.1634ms)
+✔ verify: an escrowed asset that does not match the advertised symbol is flagged (0.1666ms)
+✔ verify: snapshot level summary counts verified / mismatch / unknown (0.292ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2381.2941
